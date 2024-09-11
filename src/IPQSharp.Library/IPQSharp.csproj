@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <PackageTags>$(PackageTags);vpn;bot;tor;detection;proxy;blacklist;ip</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl" />
+    <PackageReference Include="Flurl.Http" />
+    <PackageReference Include="libphonenumber-csharp" />
+    <PackageReference Include="NetJSON" />
+  </ItemGroup>
+</Project>

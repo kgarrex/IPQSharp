@@ -1,0 +1,10 @@
+<Project>
+  <Sdk Name="Microsoft.Build.Traversal" Version="4.1.0" />
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include=".\src\**\*.*proj" />
+  </ItemGroup>
+</Project>
