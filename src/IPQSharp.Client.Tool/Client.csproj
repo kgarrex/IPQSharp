@@ -15,4 +15,8 @@
   <ItemGroup>
     <ProjectReference Include="$(IPQSharpLib)" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Spectre.Console.Cli" />
+  </ItemGroup>
 </Project>

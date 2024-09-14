@@ -14,12 +14,27 @@ host.Start();
   var app = new CommandApp();
   app.Configure(config =>
   {
-    config.AddCommand<DetectCommand>("detect")
+    config.AddCommand<DetectProxyCommand>("detect")
       .WithAlias("proxy")
-      .WithDescription("Get the overall fraud score")
       .WithExample("detect", "--ip", "0.0.0.0")
       .WithExample("detect", "--strictness", "[0-3]")
-      ;
+      .WithDescription("Get the overall fraud score");
+
+    config.AddBranch<ReportFraudSettings>("report", report =>
+      {
+        report.AddCommand<ReportEmailCommand>("email")
+          .WithDescription("Report an email as fraudulent");
+
+        report.AddCommand<ReportIpAddressCommand>("ip")
+          .WithDescription("Report an ip address as fraudulent");
+
+        report.AddCommand<ReportPhoneCommand>("phone")
+          .WithDescription("Report a phone number as fraudulent");
+
+        report.AddCommand<ReportRequestCommand>("request")
+          .WithDescription("Report a previous request as fraudulent");
+      })
+      .WithAlias("fraud");
 
     /*
     config.AddCommand<ManageAccountCommand>("account")

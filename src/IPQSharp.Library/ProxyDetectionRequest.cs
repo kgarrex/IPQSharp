@@ -150,8 +150,6 @@ public class ProxyDetectionRequest : IPQSRequest
     var result = await response.GetJsonAsync<ProxyDetectionResult>();
     return result;
   }
-
-  public void Dispose(){}
 }
 
 

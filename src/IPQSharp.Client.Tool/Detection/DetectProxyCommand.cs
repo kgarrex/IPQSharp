@@ -7,13 +7,7 @@ using Spectre.Console.Cli;
 using IPQSharp.Internal;
 using IPQSharp;
 
-public class IPQSSettings : CommandSettings
-{
-  [CommandOption("-k|--apikey <API-KEY>")]
-  public string ApiKey { get; init; }
-}
-
-public class DetectCommand : AsyncCommand<DetectCommand.Settings>
+public class DetectProxyCommand : AsyncCommand<DetectProxyCommand.Settings>
 {
   public class Settings : IPQSSettings
   {
@@ -47,7 +41,7 @@ public class DetectCommand : AsyncCommand<DetectCommand.Settings>
   }
 
   public override async Task<int> ExecuteAsync
-  (CommandContext context, DetectCommand.Settings settings)
+  (CommandContext context, DetectProxyCommand.Settings settings)
   {
     Console.WriteLine(settings.IpAddress);
     return 0;

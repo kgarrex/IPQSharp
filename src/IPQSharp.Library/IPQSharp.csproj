@@ -3,6 +3,10 @@
     <TargetFramework>net8.0</TargetFramework>
     <OutputType>Library</OutputType>
     <PackageTags>$(PackageTags);vpn;bot;tor;detection;proxy;blacklist;ip</PackageTags>
+    <RepositoryUrl>https://github.com/kgarrex/IPQSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <PackageReadMeFile>readme.md</PackageReadMeFile>
   </PropertyGroup>
 
   <ItemGroup>
