@@ -1,0 +1,1525 @@
+{
+  "IPQSharp.dll": {
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\ErrorResponse.cs": {
+      "ErrorResponse": {
+        "System.Boolean ErrorResponse::get_Success()": {
+          "Lines": {
+            "3": 0
+          },
+          "Branches": []
+        },
+        "System.String ErrorResponse::get_Message()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String ErrorResponse::get_RequestId()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\IPQSException.cs": {
+      "IPQSException": {
+        "System.Void IPQSException::.ctor()": {
+          "Lines": {
+            "3": 0,
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSException::.ctor(System.String)": {
+          "Lines": {
+            "6": 0,
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "9": 0,
+            "10": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\Models\\Address.cs": {
+      "Address": {
+        "System.String Address::get_Line1()": {
+          "Lines": {
+            "3": 0
+          },
+          "Branches": []
+        },
+        "System.String Address::get_Line2()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.String Address::get_City()": {
+          "Lines": {
+            "5": 0
+          },
+          "Branches": []
+        },
+        "System.String Address::get_Region()": {
+          "Lines": {
+            "6": 0
+          },
+          "Branches": []
+        },
+        "System.String Address::get_Postcode()": {
+          "Lines": {
+            "7": 0
+          },
+          "Branches": []
+        },
+        "System.String Address::get_Country()": {
+          "Lines": {
+            "8": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\FraudReportRequest.cs": {
+      "IPQSharp.FraudReportRequest": {
+        "System.Net.IPAddress IPQSharp.FraudReportRequest::get_IpAddress()": {
+          "Lines": {
+            "13": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_Email()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_RequestId()": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest/PhoneNumber IPQSharp.FraudReportRequest::get_Phone()": {
+          "Lines": {
+            "16": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest/TransactionInfo IPQSharp.FraudReportRequest::get_BillingInfo()": {
+          "Lines": {
+            "19": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest/TransactionInfo IPQSharp.FraudReportRequest::get_ShippingInfo()": {
+          "Lines": {
+            "20": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_Username()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_PasswordHash()": {
+          "Lines": {
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_CreditCardBin()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest::get_CreditCardHash()": {
+          "Lines": {
+            "42": 0
+          },
+          "Branches": []
+        },
+        "System.Byte IPQSharp.FraudReportRequest::get_CreditCardExpiryMonth()": {
+          "Lines": {
+            "48": 0
+          },
+          "Branches": []
+        },
+        "System.Int16 IPQSharp.FraudReportRequest::get_CreditCardExpiryYear()": {
+          "Lines": {
+            "54": 0
+          },
+          "Branches": []
+        },
+        "System.Char IPQSharp.FraudReportRequest::get_CreditCardAVSCode()": {
+          "Lines": {
+            "60": 0
+          },
+          "Branches": []
+        },
+        "System.Char IPQSharp.FraudReportRequest::get_CreditCardCVVCode()": {
+          "Lines": {
+            "66": 0
+          },
+          "Branches": []
+        },
+        "System.Decimal IPQSharp.FraudReportRequest::get_OrderAmount()": {
+          "Lines": {
+            "69": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 IPQSharp.FraudReportRequest::get_OrderQuantity()": {
+          "Lines": {
+            "72": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.FraudReportRequest::get_IsRecurring()": {
+          "Lines": {
+            "75": 0
+          },
+          "Branches": []
+        },
+        "System.Int32 IPQSharp.FraudReportRequest::get_RecurringTimes()": {
+          "Lines": {
+            "83": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.FraudReportRequest::.ctor(System.String)": {
+          "Lines": {
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.FraudReportRequest/PhoneNumber": {
+        "System.String IPQSharp.FraudReportRequest/PhoneNumber::get_Number()": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.FraudReportRequest/TransactionInfo": {
+        "System.String IPQSharp.FraudReportRequest/TransactionInfo::get_FirstName()": {
+          "Lines": {
+            "93": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest/TransactionInfo::get_LastName()": {
+          "Lines": {
+            "94": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest/TransactionInfo::get_Company()": {
+          "Lines": {
+            "95": 0
+          },
+          "Branches": []
+        },
+        "Address IPQSharp.FraudReportRequest/TransactionInfo::get_Address()": {
+          "Lines": {
+            "96": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest/TransactionInfo::get_Email()": {
+          "Lines": {
+            "97": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.FraudReportRequest/TransactionInfo::get_Phone()": {
+          "Lines": {
+            "98": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.FraudReportRequest/<>c": {
+        "System.Void IPQSharp.FraudReportRequest/<>c::<SendAsync>b__76_0(Flurl.Http.FlurlCall)": {
+          "Lines": {
+            "106": 0,
+            "107": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.FraudReportRequest/<SendAsync>d__76": {
+        "System.Void IPQSharp.FraudReportRequest/<SendAsync>d__76::MoveNext()": {
+          "Lines": {
+            "103": 0,
+            "104": 0,
+            "105": 0,
+            "108": 0,
+            "109": 0,
+            "110": 0,
+            "111": 0,
+            "112": 0,
+            "113": 0,
+            "114": 0,
+            "115": 0,
+            "116": 0,
+            "117": 0,
+            "118": 0,
+            "119": 0,
+            "120": 0,
+            "121": 0,
+            "122": 0,
+            "123": 0,
+            "124": 0,
+            "125": 0,
+            "126": 0,
+            "127": 0,
+            "128": 0,
+            "129": 0,
+            "130": 0,
+            "131": 0,
+            "132": 0,
+            "133": 0,
+            "134": 0,
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0,
+            "153": 0
+          },
+          "Branches": [
+            {
+              "Line": 104,
+              "Offset": 122,
+              "EndOffset": 124,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 122,
+              "EndOffset": 128,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 145,
+              "EndOffset": 147,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 145,
+              "EndOffset": 151,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 168,
+              "EndOffset": 170,
+              "Path": 0,
+              "Ordinal": 4,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 168,
+              "EndOffset": 174,
+              "Path": 1,
+              "Ordinal": 5,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 191,
+              "EndOffset": 193,
+              "Path": 0,
+              "Ordinal": 6,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 191,
+              "EndOffset": 197,
+              "Path": 1,
+              "Ordinal": 7,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 214,
+              "EndOffset": 216,
+              "Path": 0,
+              "Ordinal": 8,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 214,
+              "EndOffset": 220,
+              "Path": 1,
+              "Ordinal": 9,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 237,
+              "EndOffset": 239,
+              "Path": 0,
+              "Ordinal": 10,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 237,
+              "EndOffset": 243,
+              "Path": 1,
+              "Ordinal": 11,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 249,
+              "EndOffset": 251,
+              "Path": 0,
+              "Ordinal": 12,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 249,
+              "EndOffset": 255,
+              "Path": 1,
+              "Ordinal": 13,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 272,
+              "EndOffset": 274,
+              "Path": 0,
+              "Ordinal": 14,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 272,
+              "EndOffset": 278,
+              "Path": 1,
+              "Ordinal": 15,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 284,
+              "EndOffset": 286,
+              "Path": 0,
+              "Ordinal": 16,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 284,
+              "EndOffset": 290,
+              "Path": 1,
+              "Ordinal": 17,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 307,
+              "EndOffset": 309,
+              "Path": 0,
+              "Ordinal": 18,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 307,
+              "EndOffset": 313,
+              "Path": 1,
+              "Ordinal": 19,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 319,
+              "EndOffset": 321,
+              "Path": 0,
+              "Ordinal": 20,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 319,
+              "EndOffset": 325,
+              "Path": 1,
+              "Ordinal": 21,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 342,
+              "EndOffset": 344,
+              "Path": 0,
+              "Ordinal": 22,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 342,
+              "EndOffset": 348,
+              "Path": 1,
+              "Ordinal": 23,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 354,
+              "EndOffset": 356,
+              "Path": 0,
+              "Ordinal": 24,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 354,
+              "EndOffset": 360,
+              "Path": 1,
+              "Ordinal": 25,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 377,
+              "EndOffset": 379,
+              "Path": 0,
+              "Ordinal": 26,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 377,
+              "EndOffset": 383,
+              "Path": 1,
+              "Ordinal": 27,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 389,
+              "EndOffset": 391,
+              "Path": 0,
+              "Ordinal": 28,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 389,
+              "EndOffset": 395,
+              "Path": 1,
+              "Ordinal": 29,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 412,
+              "EndOffset": 414,
+              "Path": 0,
+              "Ordinal": 30,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 412,
+              "EndOffset": 418,
+              "Path": 1,
+              "Ordinal": 31,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 424,
+              "EndOffset": 426,
+              "Path": 0,
+              "Ordinal": 32,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 424,
+              "EndOffset": 430,
+              "Path": 1,
+              "Ordinal": 33,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 447,
+              "EndOffset": 449,
+              "Path": 0,
+              "Ordinal": 34,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 447,
+              "EndOffset": 453,
+              "Path": 1,
+              "Ordinal": 35,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 470,
+              "EndOffset": 472,
+              "Path": 0,
+              "Ordinal": 36,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 470,
+              "EndOffset": 476,
+              "Path": 1,
+              "Ordinal": 37,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 493,
+              "EndOffset": 495,
+              "Path": 0,
+              "Ordinal": 38,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 493,
+              "EndOffset": 499,
+              "Path": 1,
+              "Ordinal": 39,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 516,
+              "EndOffset": 518,
+              "Path": 0,
+              "Ordinal": 40,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 516,
+              "EndOffset": 522,
+              "Path": 1,
+              "Ordinal": 41,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 539,
+              "EndOffset": 541,
+              "Path": 0,
+              "Ordinal": 42,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 539,
+              "EndOffset": 545,
+              "Path": 1,
+              "Ordinal": 43,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 562,
+              "EndOffset": 564,
+              "Path": 0,
+              "Ordinal": 44,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 562,
+              "EndOffset": 568,
+              "Path": 1,
+              "Ordinal": 45,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 574,
+              "EndOffset": 576,
+              "Path": 0,
+              "Ordinal": 46,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 574,
+              "EndOffset": 580,
+              "Path": 1,
+              "Ordinal": 47,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 597,
+              "EndOffset": 599,
+              "Path": 0,
+              "Ordinal": 48,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 597,
+              "EndOffset": 603,
+              "Path": 1,
+              "Ordinal": 49,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 609,
+              "EndOffset": 611,
+              "Path": 0,
+              "Ordinal": 50,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 609,
+              "EndOffset": 615,
+              "Path": 1,
+              "Ordinal": 51,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 632,
+              "EndOffset": 634,
+              "Path": 0,
+              "Ordinal": 52,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 632,
+              "EndOffset": 638,
+              "Path": 1,
+              "Ordinal": 53,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 644,
+              "EndOffset": 646,
+              "Path": 0,
+              "Ordinal": 54,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 644,
+              "EndOffset": 650,
+              "Path": 1,
+              "Ordinal": 55,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 667,
+              "EndOffset": 669,
+              "Path": 0,
+              "Ordinal": 56,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 667,
+              "EndOffset": 673,
+              "Path": 1,
+              "Ordinal": 57,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 679,
+              "EndOffset": 681,
+              "Path": 0,
+              "Ordinal": 58,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 679,
+              "EndOffset": 685,
+              "Path": 1,
+              "Ordinal": 59,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 702,
+              "EndOffset": 704,
+              "Path": 0,
+              "Ordinal": 60,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 702,
+              "EndOffset": 708,
+              "Path": 1,
+              "Ordinal": 61,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 714,
+              "EndOffset": 716,
+              "Path": 0,
+              "Ordinal": 62,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 714,
+              "EndOffset": 720,
+              "Path": 1,
+              "Ordinal": 63,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 737,
+              "EndOffset": 739,
+              "Path": 0,
+              "Ordinal": 64,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 737,
+              "EndOffset": 743,
+              "Path": 1,
+              "Ordinal": 65,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 749,
+              "EndOffset": 751,
+              "Path": 0,
+              "Ordinal": 66,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 749,
+              "EndOffset": 755,
+              "Path": 1,
+              "Ordinal": 67,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 772,
+              "EndOffset": 774,
+              "Path": 0,
+              "Ordinal": 68,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 772,
+              "EndOffset": 778,
+              "Path": 1,
+              "Ordinal": 69,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 795,
+              "EndOffset": 797,
+              "Path": 0,
+              "Ordinal": 70,
+              "Hits": 0
+            },
+            {
+              "Line": 104,
+              "Offset": 795,
+              "EndOffset": 801,
+              "Path": 1,
+              "Ordinal": 71,
+              "Hits": 0
+            }
+          ]
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\IPQS.cs": {
+      "IPQSharp.IPQS": {
+        "System.String IPQSharp.IPQS::get_ApiKey()": {
+          "Lines": {
+            "24": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.IPQS::get_ThrowExceptionOnError()": {
+          "Lines": {
+            "26": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\IPQSRequest.cs": {
+      "IPQSharp.IPQSRequest": {
+        "System.String IPQSharp.IPQSRequest::get_ApiKey()": {
+          "Lines": {
+            "4": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.IPQSRequest::Dispose()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.IPQSRequest::.ctor(System.String)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\IPQSResult.cs": {
+      "IPQSharp.IPQSResult": {
+        "System.String IPQSharp.IPQSResult::get_Message()": {
+          "Lines": {
+            "10": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.IPQSResult::get_Success()": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.IPQSResult::get_RequestId()": {
+          "Lines": {
+            "23": 0
+          },
+          "Branches": []
+        },
+        "System.String[] IPQSharp.IPQSResult::get_Errors()": {
+          "Lines": {
+            "27": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\ProxyDetectionRequest.cs": {
+      "IPQSharp.ProxyDetectionRequest": {
+        "System.Net.IPAddress IPQSharp.ProxyDetectionRequest::get_IpAddress()": {
+          "Lines": {
+            "41": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.StrictnessLevel IPQSharp.ProxyDetectionRequest::get_Strictness()": {
+          "Lines": {
+            "54": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionRequest::get_UserAgent()": {
+          "Lines": {
+            "65": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionRequest::get_UserLanguage()": {
+          "Lines": {
+            "74": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.ProxyDetectionRequest::get_DoFastLookup()": {
+          "Lines": {
+            "86": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.ProxyDetectionRequest::get_IsMobileDevice()": {
+          "Lines": {
+            "97": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.ProxyDetectionRequest::get_AllowPublicAccessPoints()": {
+          "Lines": {
+            "107": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean IPQSharp.ProxyDetectionRequest::get_HaveLighterPenalties()": {
+          "Lines": {
+            "117": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.TransactionStrictnessLevel IPQSharp.ProxyDetectionRequest::get_TransactionStrictness()": {
+          "Lines": {
+            "130": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.ProxyDetectionRequest::.ctor(System.String,System.String)": {
+          "Lines": {
+            "28": 2,
+            "29": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.ProxyDetectionRequest::.ctor(System.String,System.Net.IPAddress)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0,
+            "34": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.ProxyDetectionRequest/<SendAsync>d__37": {
+        "System.Void IPQSharp.ProxyDetectionRequest/<SendAsync>d__37::MoveNext()": {
+          "Lines": {
+            "135": 0,
+            "136": 0,
+            "137": 0,
+            "138": 0,
+            "139": 0,
+            "140": 0,
+            "141": 0,
+            "142": 0,
+            "143": 0,
+            "144": 0,
+            "145": 0,
+            "146": 0,
+            "147": 0,
+            "148": 0,
+            "149": 0,
+            "150": 0,
+            "151": 0,
+            "152": 0
+          },
+          "Branches": []
+        }
+      },
+      "IPQSharp.ProxyDetectionRequestExtensions": {
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithUserAgent(IPQSharp.ProxyDetectionRequest,System.String)": {
+          "Lines": {
+            "159": 0,
+            "160": 0,
+            "161": 0,
+            "162": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictPenalties(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "165": 0,
+            "166": 0,
+            "167": 0,
+            "168": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithNoPublicAccessPoints(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "171": 0,
+            "172": 0,
+            "173": 0,
+            "174": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithMobileDevice(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "177": 0,
+            "178": 0,
+            "179": 0,
+            "180": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithFastLookup(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "183": 0,
+            "184": 0,
+            "185": 0,
+            "186": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithUserLanguage(IPQSharp.ProxyDetectionRequest,System.String)": {
+          "Lines": {
+            "189": 0,
+            "190": 0,
+            "191": 0,
+            "192": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictnessLevel(IPQSharp.ProxyDetectionRequest,IPQSharp.StrictnessLevel)": {
+          "Lines": {
+            "195": 0,
+            "196": 0,
+            "197": 0,
+            "198": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictnessLevelLow(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "201": 0,
+            "202": 0,
+            "203": 0,
+            "204": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictnessLevelMedium(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "207": 0,
+            "208": 0,
+            "209": 0,
+            "210": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictnessLevelHigh(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "213": 0,
+            "214": 0,
+            "215": 0,
+            "216": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithStrictnessLevelVeryHigh(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "219": 0,
+            "220": 0,
+            "221": 0,
+            "222": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithTransactionStrictnessLevel(IPQSharp.ProxyDetectionRequest,IPQSharp.TransactionStrictnessLevel)": {
+          "Lines": {
+            "225": 0,
+            "226": 0,
+            "227": 0,
+            "228": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithTransactionStrictnessLevelLow(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "231": 0,
+            "232": 0,
+            "233": 0,
+            "234": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithTransactionStrictnessLevelMedium(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "237": 0,
+            "238": 0,
+            "239": 0,
+            "240": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.ProxyDetectionRequest IPQSharp.ProxyDetectionRequestExtensions::WithTransactionStrictnessLevelHigh(IPQSharp.ProxyDetectionRequest)": {
+          "Lines": {
+            "243": 0,
+            "244": 0,
+            "245": 0,
+            "246": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\ProxyDetectionResult.cs": {
+      "IPQSharp.ProxyDetectionResult": {
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsProxy()": {
+          "Lines": {
+            "28": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_Hostname()": {
+          "Lines": {
+            "32": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_InternetServiceProvider()": {
+          "Lines": {
+            "35": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_Organization()": {
+          "Lines": {
+            "40": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Int32> IPQSharp.ProxyDetectionResult::get_AutonomousSystemNumber()": {
+          "Lines": {
+            "43": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_CountryCode()": {
+          "Lines": {
+            "46": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_Region()": {
+          "Lines": {
+            "49": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_TimeZone()": {
+          "Lines": {
+            "52": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Single> IPQSharp.ProxyDetectionResult::get_Latitude()": {
+          "Lines": {
+            "58": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Single> IPQSharp.ProxyDetectionResult::get_Longitude()": {
+          "Lines": {
+            "64": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_ZipCode()": {
+          "Lines": {
+            "70": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsCrawler()": {
+          "Lines": {
+            "80": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_ConnectionType()": {
+          "Lines": {
+            "83": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_HasRecentAbuse()": {
+          "Lines": {
+            "95": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_AbuseVelocity()": {
+          "Lines": {
+            "105": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsBot()": {
+          "Lines": {
+            "116": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsVpn()": {
+          "Lines": {
+            "126": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsTor()": {
+          "Lines": {
+            "129": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsActiveVpn()": {
+          "Lines": {
+            "132": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsActiveTor()": {
+          "Lines": {
+            "135": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsMobileBrowser()": {
+          "Lines": {
+            "144": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Single> IPQSharp.ProxyDetectionResult::get_FraudScore()": {
+          "Lines": {
+            "154": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsFraudulentAbuser()": {
+          "Lines": {
+            "165": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsHighRiskAttacker()": {
+          "Lines": {
+            "176": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsSharedConnection()": {
+          "Lines": {
+            "187": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsDynamicConnection()": {
+          "Lines": {
+            "196": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsSecurityScanner()": {
+          "Lines": {
+            "204": 0
+          },
+          "Branches": []
+        },
+        "System.Nullable`1<System.Boolean> IPQSharp.ProxyDetectionResult::get_IsTrustedNetwork()": {
+          "Lines": {
+            "214": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_OperatingSystem()": {
+          "Lines": {
+            "217": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_Browser()": {
+          "Lines": {
+            "220": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_DeviceBrand()": {
+          "Lines": {
+            "223": 0
+          },
+          "Branches": []
+        },
+        "System.String IPQSharp.ProxyDetectionResult::get_DeviceModel()": {
+          "Lines": {
+            "226": 0
+          },
+          "Branches": []
+        },
+        "System.Object IPQSharp.ProxyDetectionResult::get_TransactionDetails()": {
+          "Lines": {
+            "241": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\JsonSerializer.cs": {
+      "IPQSharp.Internal.JsonSerializer": {
+        "System.String IPQSharp.Internal.JsonSerializer::Serialize(System.Object)": {
+          "Lines": {
+            "14": 0,
+            "15": 0,
+            "16": 0
+          },
+          "Branches": []
+        },
+        "T IPQSharp.Internal.JsonSerializer::Deserialize(System.String)": {
+          "Lines": {
+            "19": 0,
+            "20": 0,
+            "21": 0
+          },
+          "Branches": []
+        },
+        "T IPQSharp.Internal.JsonSerializer::Deserialize(System.IO.Stream)": {
+          "Lines": {
+            "24": 0,
+            "25": 0
+          },
+          "Branches": []
+        },
+        "System.Void IPQSharp.Internal.JsonSerializer::.ctor()": {
+          "Lines": {
+            "8": 0,
+            "9": 0,
+            "10": 0,
+            "11": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "C:\\Users\\Kendrick\\Development\\IPQSharp\\src\\IPQSharp.Library\\FraudReportExtensions.cs": {
+      "IPQSharp.Internals.FraudReportExtensions": {
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithBillingName(IPQSharp.FraudReportRequest,System.String,System.String)": {
+          "Lines": {
+            "6": 0,
+            "7": 0,
+            "8": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithBillingCompany(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "11": 0,
+            "12": 0,
+            "13": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithBillingAddress(IPQSharp.FraudReportRequest,Address)": {
+          "Lines": {
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithBillingEmail(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "23": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithBillingPhone(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithShippingName(IPQSharp.FraudReportRequest,System.String,System.String)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "33": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithShippingCompany(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithShippingAddress(IPQSharp.FraudReportRequest,Address)": {
+          "Lines": {
+            "41": 0,
+            "42": 0,
+            "43": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithShippingEmail(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "46": 0,
+            "47": 0,
+            "48": 0
+          },
+          "Branches": []
+        },
+        "IPQSharp.FraudReportRequest IPQSharp.Internals.FraudReportExtensions::WithShippingPhone(IPQSharp.FraudReportRequest,System.String)": {
+          "Lines": {
+            "51": 0,
+            "52": 0,
+            "53": 0
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
