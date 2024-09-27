@@ -6,3 +6,7 @@ public class IPQSSettings : CommandSettings
   public string ApiKey { get; init; }
 }
 
+public enum IPQSExitCode
+{
+  Success,
+}

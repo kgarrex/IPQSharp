@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Extensions.Hosting;
 using DotNetEnv;
+using Spectre.Console;
 using Spectre.Console.Cli;
 
 DotNetEnv.Env.Load();
@@ -14,6 +15,12 @@ host.Start();
   var app = new CommandApp();
   app.Configure(config =>
   {
+    config.SetExceptionHandler((ex, resolver) =>
+    {
+      AnsiConsole.WriteException(ex, ExceptionFormats.ShortenEverything);
+      return -99;
+    });
+
     config.AddCommand<DetectProxyCommand>("detect")
       .WithAlias("proxy")
       .WithExample("detect", "--ip", "0.0.0.0")

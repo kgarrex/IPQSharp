@@ -25,7 +25,7 @@ public enum TransactionStrictnessLevel
 public class ProxyDetectionRequest : IPQSRequest
 {
   public ProxyDetectionRequest(string apiKey, string ipString) :
-    this(apiKey, new IPAddress(Encoding.ASCII.GetBytes(ipString)))
+    this(apiKey, IPAddress.Parse(ipString))
   {}
 
   public ProxyDetectionRequest(string apiKey, IPAddress ipAddress) : base(apiKey)

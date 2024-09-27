@@ -2,7 +2,7 @@ using System.IO;
 using Flurl.Http.Configuration;
 
 namespace IPQSharp.Internal;
-public class JsonSerializer : ISerializer
+internal class JsonSerializer : ISerializer
 {
   private NetJSON.NetJSONSettings _settings;
   public JsonSerializer()

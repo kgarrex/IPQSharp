@@ -2,12 +2,11 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Threading.Tasks;
-using Spectre.Console.Cli;
 
 using IPQSharp.Internal;
 using IPQSharp;
 
-public class DetectProxyCommand : AsyncCommand<DetectProxyCommand.Settings>
+public class DetectProxyCommand : IPQSCommand<DetectProxyCommand.Settings>
 {
   public class Settings : IPQSSettings
   {
@@ -43,8 +42,6 @@ public class DetectProxyCommand : AsyncCommand<DetectProxyCommand.Settings>
   public override async Task<int> ExecuteAsync
   (CommandContext context, DetectProxyCommand.Settings settings)
   {
-    Console.WriteLine(settings.IpAddress);
-    return 0;
     var request = new ProxyDetectionRequest(settings.ApiKey, settings.IpAddress)
     {
       Strictness = (StrictnessLevel)settings.Strictness,
@@ -56,7 +53,9 @@ public class DetectProxyCommand : AsyncCommand<DetectProxyCommand.Settings>
       HaveLighterPenalties = settings.HaveLighterPenalties,
       TransactionStrictness = (TransactionStrictnessLevel)settings.TransactionStrictness,
     };
-    var result = await request.SendAsync();
-    return 0;
+    Console.WriteLine($"Detecting proxy for {settings.IpAddress}...");
+    ProxyDetectionResult result = await request.SendAsync();
+    WriteOutput<ProxyDetectionResult>(result);
+    return (int)GetExitCodeFromMessage(result.Message);
   }
 }
