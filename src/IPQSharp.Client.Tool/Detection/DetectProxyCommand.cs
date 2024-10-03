@@ -56,6 +56,6 @@ public class DetectProxyCommand : IPQSCommand<DetectProxyCommand.Settings>
     Console.WriteLine($"Detecting proxy for {settings.IpAddress}...");
     ProxyDetectionResult result = await request.SendAsync();
     WriteOutput<ProxyDetectionResult>(result);
-    return (int)GetExitCodeFromMessage(result.Message);
+    return (int)GetExitCodeFromResult(result);
   }
 }

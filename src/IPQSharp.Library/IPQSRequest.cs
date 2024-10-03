@@ -5,7 +5,7 @@ public abstract class IPQSRequest : IDisposable
 
   public IPQSRequest(string apiKey)
   {
-    ApiKey = apiKey;
+    ApiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
   }
 
   public void Dispose(){}

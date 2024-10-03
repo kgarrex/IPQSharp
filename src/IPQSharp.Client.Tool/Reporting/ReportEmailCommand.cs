@@ -1,4 +1,4 @@
-public class ReportEmailCommand : AsyncCommand<ReportEmailCommand.Settings>
+public class ReportEmailCommand : IPQSCommand<ReportEmailCommand.Settings>
 {
   public class Settings : ReportFraudSettings
   {

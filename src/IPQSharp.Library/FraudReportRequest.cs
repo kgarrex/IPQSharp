@@ -2,6 +2,8 @@ using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
 using Flurl.Http;
+using PhoneNumbers;
+using PhoneNumberParser = PhoneNumbers.Extensions.PhoneNumber;
 
 namespace IPQSharp;
 
@@ -9,12 +11,32 @@ public class FraudReportRequest : IPQSRequest
 {
   public FraudReportRequest(string apiKey) : base(apiKey)
   {}
+ 
+  /// <summary>
+  /// This constructor accepts values for each type of fraud report request (ip address, email, request-id and phone). At least one of these values must be provided to construct a valid request.
+  /// </summary>
+  /// <param name="email">An email to report</param>
+  /// <param name="phone">A phone number to report. Number must be in international format</param>
+  public FraudReportRequest(string apiKey,
+    string? ipAddress = default,
+    string? email = default,
+    string? requestId = default,
+    string? phone = default,
+    string? countrycode = "ZZ") : base(apiKey)
+  {
+    PhoneNumber phoneNumber;
+    IpAddress = IPAddress.Parse(ipAddress);
+    Email = email;
+    RequestId = requestId;
+    Phone = PhoneNumberParser.TryParseValid(phone, countrycode, out phoneNumber) ?
+              phoneNumber :
+              throw new PhoneNumberException();
+  }
 
   public IPAddress? IpAddress { get; set; }
   public string? Email { get; set; }
   public string? RequestId { get; set; }
   public PhoneNumber? Phone { get; set; }
-  public record PhoneNumber(string Number, string CountryCode);
 
   public TransactionInfo BillingInfo { get; set; } = new TransactionInfo();
   public TransactionInfo ShippingInfo { get; set; } = new TransactionInfo();
@@ -95,11 +117,10 @@ public class FraudReportRequest : IPQSRequest
     public string? Company { get; set; }
     public Address? Address { get; set; }
     public string? Email { get; set; }
-    public string? Phone { get; set; }
+    public PhoneNumber? Phone { get; set; }
   }
 
-  public async Task<IPQSResult>
-  SendAsync(CancellationToken token = default)
+  public async Task<IPQSResult> SendAsync(CancellationToken token = default)
   {
     var request = "https://www.ipqualityscore.com/api/json/report"
       .BeforeCall(call =>
@@ -111,7 +132,7 @@ public class FraudReportRequest : IPQSRequest
         ip                  = this.IpAddress,
         email               = this.Email,
         request_id          = this.RequestId,
-        phone               = this.Phone?.Number,
+        phone               = this.Phone?.NationalNumber,
         country             = this.Phone?.CountryCode,
         billing_first_name  = this.BillingInfo?.FirstName,
         billing_last_name   = this.BillingInfo?.LastName,

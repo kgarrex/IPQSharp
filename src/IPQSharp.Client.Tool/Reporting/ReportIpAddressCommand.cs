@@ -1,4 +1,4 @@
-public class ReportIpAddressCommand : AsyncCommand<ReportIpAddressCommand.Settings>
+public class ReportIpAddressCommand : IPQSCommand<ReportIpAddressCommand.Settings>
 {
   public class Settings : ReportFraudSettings
   {

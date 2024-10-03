@@ -1,3 +1,5 @@
+namespace IPQSharp;
+
 public class IPQSException : Exception
 {
   public IPQSException()
@@ -9,3 +11,6 @@ public class IPQSException : Exception
   public IPQSException(string message, Exception inner) : base(message, inner)
   {}
 }
+
+public class PhoneNumberException : IPQSException
+{}

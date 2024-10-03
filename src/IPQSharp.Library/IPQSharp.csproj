@@ -13,6 +13,7 @@
     <PackageReference Include="Flurl" />
     <PackageReference Include="Flurl.Http" />
     <PackageReference Include="libphonenumber-csharp" />
+    <PackageReference Include="libphonenumber-csharp.extensions" />
     <PackageReference Include="NetJSON" />
   </ItemGroup>
 </Project>
