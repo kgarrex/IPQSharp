@@ -1,4 +1,5 @@
 using IPQSharp;
+using IPQSharp.ProxyDetection;
 
 public class ProxyDetectionRequestTests
 {

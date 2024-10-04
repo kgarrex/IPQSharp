@@ -3,8 +3,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Threading.Tasks;
 
-using IPQSharp.Internal;
 using IPQSharp;
+using IPQSharp.ProxyDetection;
 
 public class DetectProxyCommand : IPQSCommand<DetectProxyCommand.Settings>
 {

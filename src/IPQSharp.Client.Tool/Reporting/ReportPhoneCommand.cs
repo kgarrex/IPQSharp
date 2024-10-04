@@ -1,5 +1,6 @@
 using System.ComponentModel;
 using IPQSharp;
+using IPQSharp.FraudReporting;
 
 public class ReportPhoneCommand : IPQSCommand<ReportPhoneCommand.Settings>
 {

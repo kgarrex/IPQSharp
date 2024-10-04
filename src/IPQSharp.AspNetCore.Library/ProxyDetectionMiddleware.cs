@@ -12,6 +12,7 @@ using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 using IPQSharp;
+using IPQSharp.ProxyDetection;
 
 namespace IPQSharp.AspNetCore;
 
