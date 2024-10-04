@@ -1,4 +1,4 @@
-namespace IPQSharp.Internals;
+namespace IPQSharp.FraudReporting;
 
 public static class FraudReportExtensions
 {

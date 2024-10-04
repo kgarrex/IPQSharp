@@ -1,6 +1,6 @@
 using NetJSON;
 
-namespace IPQSharp;
+namespace IPQSharp.ProxyDetection;
 
 public enum ConnectionType
 {

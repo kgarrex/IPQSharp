@@ -5,7 +5,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Flurl.Http;
 
-namespace IPQSharp;
+namespace IPQSharp.ProxyDetection;
 
 public enum StrictnessLevel
 {

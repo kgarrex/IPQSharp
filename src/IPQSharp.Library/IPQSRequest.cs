@@ -1,4 +1,5 @@
 namespace IPQSharp;
+
 public abstract class IPQSRequest : IDisposable
 {
   public string ApiKey { get; }

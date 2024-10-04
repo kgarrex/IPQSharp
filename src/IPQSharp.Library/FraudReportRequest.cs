@@ -5,7 +5,7 @@ using Flurl.Http;
 using PhoneNumbers;
 using PhoneNumberParser = PhoneNumbers.Extensions.PhoneNumber;
 
-namespace IPQSharp;
+namespace IPQSharp.FraudReporting;
 
 public class FraudReportRequest : IPQSRequest 
 {
