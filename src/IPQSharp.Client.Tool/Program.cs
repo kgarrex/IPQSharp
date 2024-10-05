@@ -43,6 +43,15 @@ host.Start();
       })
       .WithAlias("fraud");
 
+    config.AddBranch<IPQSSettings>("validate", validate =>
+      {
+        validate.AddCommand<ValidateEmailCommand>("email")
+          .WithDescription("Validate an email address");
+
+        validate.AddCommand<ValidatePhoneCommand>("phone")
+          .WithDescription("Validate a phone number");
+      });
+
     /*
     config.AddCommand<ManageAccountCommand>("account")
       .WithAlias("manage")
