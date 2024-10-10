@@ -273,7 +273,7 @@ public class PhoneValidationResult : IPQSResult
   /// restricted to upgraded plans. Object value contains, "status", and "emails"
   /// as an array.
   /// </value>
-  public AssociatedEmailAddresses AssociatedEmailAddresses { get; set; }
+  public AssociatedEmailAddresses? AssociatedEmailAddresses { get; set; }
 
   /// <value>
   /// Additional scoring variables for risk analysis are available when transaction
@@ -281,13 +281,13 @@ public class PhoneValidationResult : IPQSResult
   /// useful for scoring user data such as physical address, phone numbers,
   /// usernames, and transaction details.
   /// </value>
-  public TransactionDetails TransactionDetails { get; set; }
+  public TransactionDetails? TransactionDetails { get; set; }
 }
 
 public class AssociatedEmailAddresses
 {
-  public string Status { get; set; }
-  public string[] Emails { get; set; }
+  public string? Status { get; set; }
+  public string[]? Emails { get; set; }
 }
 
 public class TransactionDetails

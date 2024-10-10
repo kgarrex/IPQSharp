@@ -1,15 +1,22 @@
 using System.Text.Json.Serialization;
+using System.Threading;
+using System.Threading.Tasks;
+using Flurl.Http;
 using IPQSharp;
-using IPQSharp.CreditCardUsage;
+
+namespace IPQSharp.CreditCardUsage;
 
 public class CreditCardUsageRequest : IPQSRequest
 {
+  public CreditCardUsageRequest(string apiKey) : base(apiKey)
+  {}
+
   public async Task<CreditCardUsageResult>
   SendAsync(CancellationToken token = default)
   {
-    var response = await "https://www.ipqualityscore.com/api/json/account"
+    var url = Flurl.Url.Parse("https://www.ipqualityscore.com/api/json/account")
       .AppendPathSegment(ApiKey);
-    var result = await response.GetJsonAsync<CreditCardUsageResult>();
+    var result = await url.GetJsonAsync<CreditCardUsageResult>();
     return result;
   }
 }

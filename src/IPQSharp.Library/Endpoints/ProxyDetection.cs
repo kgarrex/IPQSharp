@@ -131,6 +131,9 @@ public class ProxyDetectionRequest : IPQSRequest
   public TransactionStrictnessLevel TransactionStrictness { get; set; } = TransactionStrictnessLevel.Low;
 
 
+  /// <summary>
+  /// Send a Proxy Detection request
+  /// </summary>
   public async Task<ProxyDetectionResult>
   SendAsync(CancellationToken token = default)
   {
