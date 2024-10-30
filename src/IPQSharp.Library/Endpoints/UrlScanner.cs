@@ -25,8 +25,10 @@ public enum DomainTrustLevel
 
 public class UrlScanRequest : IPQSRequest
 {
-  public UrlScanRequest(string apiKey) : base(apiKey)
-  {}
+  public UrlScanRequest(string apiKey, string url) : base(apiKey)
+  {
+    Url = new Uri(url);
+  }
  
   public Uri? Url { get; set; }
 

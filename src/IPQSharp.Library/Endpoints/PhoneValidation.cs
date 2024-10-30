@@ -16,7 +16,7 @@ public class PhoneValidationRequest : IPQSRequest
 {
   public PhoneValidationRequest(string apiKey, string phone) : base(apiKey)
   {
-  
+    Phone = phone;
   }
 
   public string? Phone { get; set; }
