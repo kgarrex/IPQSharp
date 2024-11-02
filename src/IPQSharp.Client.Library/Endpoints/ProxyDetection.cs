@@ -1,10 +1,11 @@
 using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using Flurl.Http;
-using NetJSON;
+//using NetJSON;
 
 namespace IPQSharp.ProxyDetection;
 
@@ -273,14 +274,14 @@ public class ProxyDetectionResult : IPQSResult
   /// <value>
   /// Is this IP address suspected to be a proxy? (SOCKS, Elite, Anonymous, VPN, Tor, etc.)
   /// </value>
-  [NetJSONPropertyAttribute("proxy")]
+  [JsonPropertyName("proxy")]
   public bool? IsProxy { get; set; }
 
   /// <value>Hostname of the IP address if one is available.</value>
-  [NetJSONPropertyAttribute("host")]
+  [JsonPropertyName("host")]
   public string? Hostname { get; set; }
 
-  [NetJSONPropertyAttribute("ISP")]
+  [JsonPropertyName("ISP")]
   public string? InternetServiceProvider { get; set; }
 
   /// <value>
@@ -288,34 +289,34 @@ public class ProxyDetectionResult : IPQSResult
   /// </value>
   public string? Organization { get; set; }
 
-  [NetJSONPropertyAttribute("ASN")]
+  [JsonPropertyName("ASN")]
   public int? AutonomousSystemNumber { get; set; }
 
-  [NetJSONPropertyAttribute("country_code")]
+  [JsonPropertyName("country_code")]
   public string? CountryCode { get; set; }
 
-  [NetJSONPropertyAttribute("region")]
+  [JsonPropertyName("region")]
   public string? Region { get; set; }
 
-  [NetJSONPropertyAttribute("timezone")]
+  [JsonPropertyName("timezone")]
   public string? TimeZone { get; set; }
 
   /// <value>
   /// Latitude of IP address if available or "N/A" if unknown.
   /// </value>
-  [NetJSONPropertyAttribute("latitude")]
+  [JsonPropertyName("latitude")]
   public float? Latitude { get; set; }
 
   /// <value>
   /// Longitude of IP address if available or "N/A" if unknown.
   /// </value>
-  [NetJSONPropertyAttribute("longitude")]
+  [JsonPropertyName("longitude")]
   public float? Longitude { get; set; }
 
   /// <value>
   /// Postal code of the IP address if available or "N/A".
   /// </value>
-  [NetJSONPropertyAttribute("zip_code")]
+  [JsonPropertyName("zip_code")]
   public string? ZipCode { get; set; }
 
   /**
@@ -325,10 +326,10 @@ public class ProxyDetectionResult : IPQSResult
    * address verification.
    * </value>
    */
-  [NetJSONPropertyAttribute("is_crawler")]
+  [JsonPropertyName("is_crawler")]
   public bool? IsCrawler { get; set; }
 
-  [NetJSONPropertyAttribute("connection_type")]
+  [JsonPropertyName("connection_type")]
   public string? ConnectionType { get; set; }
 
   /**
@@ -340,7 +341,7 @@ public class ProxyDetectionResult : IPQSResult
    * the past few days.
    * </value>
    */
-  [NetJSONPropertyAttribute("recent_abuse")]
+  [JsonPropertyName("recent_abuse")]
   public bool? HasRecentAbuse { get; set; }
 
   /**
@@ -350,7 +351,7 @@ public class ProxyDetectionResult : IPQSResult
    * the Fraud Score to identify bad behavior.
    * </value>
    */
-  [NetJSONPropertyAttribute("abuse_velocity")]
+  [JsonPropertyName("abuse_velocity")]
   public string? AbuseVelocity { get; set; }
 
 
@@ -361,7 +362,7 @@ public class ProxyDetectionResult : IPQSResult
    * is suspicious.
    * </value>
    */
-  [NetJSONPropertyAttribute("bot_status")]
+  [JsonPropertyName("bot_status")]
   public bool? IsBot { get; set; }
 
   /**
@@ -371,16 +372,16 @@ public class ProxyDetectionResult : IPQSResult
    * true when this value is true.
    * </value>
    */
-  [NetJSONPropertyAttribute("vpn")]
+  [JsonPropertyName("vpn")]
   public bool? IsVpn { get; set; }
 
-  [NetJSONPropertyAttribute("tor")]
+  [JsonPropertyName("tor")]
   public bool? IsTor { get; set; }
 
-  [NetJSONPropertyAttribute("active_vpn")]
+  [JsonPropertyName("active_vpn")]
   public bool? IsActiveVpn { get; set; }
 
-  [NetJSONPropertyAttribute("active_tor")]
+  [JsonPropertyName("active_tor")]
   public bool? IsActiveTor { get; set; }
 
   /**
@@ -389,7 +390,7 @@ public class ProxyDetectionResult : IPQSResult
    * is not passed in the API request)
    * </value>
    */
-  [NetJSONPropertyAttribute("mobile")]
+  [JsonPropertyName("mobile")]
   public bool? IsMobileBrowser { get; set; }
   /**
    * <value>
@@ -399,7 +400,7 @@ public class ProxyDetectionResult : IPQSResult
    * Scores >= 90, but you may find it beneficial to use a higher or lower threshold.
    * </value>
    */
-  [NetJSONPropertyAttribute("fraud_score")]
+  [JsonPropertyName("fraud_score")]
   public float? FraudScore { get; set; }
   /**
    * <value>
@@ -410,8 +411,8 @@ public class ProxyDetectionResult : IPQSResult
    * temporarily active in a botnet or residential proxy network.
    * </value>
    */
-  [NetJSONPropertyAttribute("fraudulent_abuser")]
-  public bool? IsFraudulentAbuser { get; set; }
+  [JsonPropertyName("frequent_abuser")]
+  public bool? IsFrequentAbuser { get; set; }
   /**
    * <value>
    * Enterprise Data Point - Confirms if this IP address has engaged in malicious
@@ -421,7 +422,7 @@ public class ProxyDetectionResult : IPQSResult
    * easily accessible anonymizers.
    * </value>
    */
-  [NetJSONPropertyAttribute("high_risk_attacks")]
+  [JsonPropertyName("high_risk_attacks")]
   public bool? IsHighRiskAttacker { get; set; }
   /**
    * <value>
@@ -432,7 +433,7 @@ public class ProxyDetectionResult : IPQSResult
    * VPNs, etc.
    * </value>
    */
-  [NetJSONPropertyAttribute("shared_connection")]
+  [JsonPropertyName("shared_connection")]
   public bool? IsSharedConnection { get; set; }
   /**
    * <value>
@@ -441,7 +442,7 @@ public class ProxyDetectionResult : IPQSResult
    * IP address by this provider in the near future.
    * </value>
    */
-  [NetJSONPropertyAttribute("dynamic_connection")]
+  [JsonPropertyName("dynamic_connection")]
   public bool? IsDynamicConnection { get; set; }
   /**
    * <value>
@@ -449,7 +450,7 @@ public class ProxyDetectionResult : IPQSResult
    * by a trusted security vendor such as Tenable, Qualys, and similar providers.
    * </value>
    */
-  [NetJSONPropertyAttribute("security_scanner")]
+  [JsonPropertyName("security_scanner")]
   public bool? IsSecurityScanner { get; set; }
   /**
    * <value>
@@ -459,19 +460,19 @@ public class ProxyDetectionResult : IPQSResult
    * trusted is this value is true.
    * </value>
    */
-  [NetJSONPropertyAttribute("trusted_network")]
+  [JsonPropertyName("trusted_network")]
   public bool? IsTrustedNetwork { get; set; }
 
-  [NetJSONPropertyAttribute("operating_system")]
+  [JsonPropertyName("operating_system")]
   public string? OperatingSystem { get; set; }
 
-  [NetJSONPropertyAttribute("browser")]
+  [JsonPropertyName("browser")]
   public string? Browser { get; set; }
 
-  [NetJSONPropertyAttribute("device_brand")]
+  [JsonPropertyName("device_brand")]
   public string? DeviceBrand { get; set; }
 
-  [NetJSONPropertyAttribute("device_model")]
+  [JsonPropertyName("device_model")]
   public string? DeviceModel { get; set; }
 
   /**
@@ -486,7 +487,7 @@ public class ProxyDetectionResult : IPQSResult
    * For instance, not passing the "billing_email" will return "valid_billing_email" as null.
    * </value>
    */
-  [NetJSONPropertyAttribute("transaction_details")]
+  [JsonPropertyName("transaction_details")]
   public object? TransactionDetails { get; set; } // TODO finis writing out this object
 }
 

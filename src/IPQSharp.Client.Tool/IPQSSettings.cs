@@ -1,9 +1,11 @@
+using System.ComponentModel;
 using Spectre.Console.Cli;
 
 public class IPQSSettings : CommandSettings
 {
   [CommandOption("-k|--apikey <API-KEY>")]
-  public string ApiKey { get; init; }
+  [Description("The IPQS Api Key")]
+  public string ApiKey { get; set; }
 }
 
 public enum IPQSExitCode

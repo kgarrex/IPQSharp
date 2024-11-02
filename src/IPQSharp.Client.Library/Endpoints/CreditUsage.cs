@@ -2,26 +2,27 @@ using System.Text.Json.Serialization;
 using System.Threading;
 using System.Threading.Tasks;
 using Flurl.Http;
+
 using IPQSharp;
 
-namespace IPQSharp.CreditCardUsage;
+namespace IPQSharp.CreditUsage;
 
-public class CreditCardUsageRequest : IPQSRequest
+public class CreditUsageRequest : IPQSRequest
 {
-  public CreditCardUsageRequest(string apiKey) : base(apiKey)
+  public CreditUsageRequest(string apiKey) : base(apiKey)
   {}
 
-  public async Task<CreditCardUsageResult>
+  public async Task<CreditUsageResult>
   SendAsync(CancellationToken token = default)
   {
     var url = Flurl.Url.Parse("https://www.ipqualityscore.com/api/json/account")
       .AppendPathSegment(ApiKey);
-    var result = await url.GetJsonAsync<CreditCardUsageResult>();
+    var result = await url.GetJsonAsync<CreditUsageResult>();
     return result;
   }
 }
 
-public class CreditCardUsageResult : IPQSResult
+public class CreditUsageResult : IPQSResult
 {
   /// <value> The total number of credits available to an account </value>
   [JsonPropertyName("credits")]

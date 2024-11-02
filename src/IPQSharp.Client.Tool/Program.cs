@@ -13,6 +13,9 @@ var host = builder.Build();
 
 host.Start();
 {
+  DotNetEnv.Env.Load();
+  DotNetEnv.Env.TraversePath().Load();
+
   var app = new CommandApp();
   app.Configure(config =>
   {
@@ -23,6 +26,7 @@ host.Start();
 
     config.SetApplicationName("IPQS");
     config.UseAssemblyInformationalVersion();
+    config.SetInterceptor(new CommandInterceptor());
 
     config.SetExceptionHandler((ex, resolver) =>
     {
@@ -30,14 +34,16 @@ host.Start();
       return -99;
     });
 
-    config.AddCommand<DetectProxyCommand>("detect")
+    config
+      .AddCommand<DetectProxyCommand>("detect")
       .WithAlias("proxy")
       .WithExample("detect", "--ip", "0.0.0.0")
       .WithExample("detect", "--strictness", "[0-3]")
       .WithDescription("Get the overall fraud score for an IP address");
 
 
-    config.SafetyOff()
+    config
+      .SafetyOff()
       .AddBranch("report", typeof(ReportFraudSettings), reportBranch =>
       {
         reportBranch.AddCommand("email", typeof(ReportEmailCommand))
@@ -56,7 +62,8 @@ host.Start();
       });
 
 
-    config.SafetyOff()
+    config
+      .SafetyOff()
       .AddBranch("validate", typeof(IPQSSettings), validateBranch =>
       {
         validateBranch.AddCommand("email", typeof(ValidateEmailCommand))
@@ -69,7 +76,8 @@ host.Start();
       });
 
 
-    config.SafetyOff()
+    config
+      .SafetyOff()
       .AddBranch("scan", typeof(IPQSSettings), scanBranch =>
       {
         scanBranch.AddCommand("file", typeof(ScanFileCommand))
